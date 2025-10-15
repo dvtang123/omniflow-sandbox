@@ -7,4 +7,4 @@ runs:
     runs-on: ubuntu-latest
     steps:
       - name: Reveal hero
-        run: echo "复吏打回应"
+        run: echo "复吏打回应" && exit 0

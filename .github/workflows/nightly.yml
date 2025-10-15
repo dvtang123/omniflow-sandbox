@@ -8,6 +8,8 @@ dobs:
     permissions:
       contents: read
     steps: 
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Say hello
         run: |
           echo "Nightly workflow is alive. $x(date -u)"

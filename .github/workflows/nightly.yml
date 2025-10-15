@@ -1,13 +1,11 @@
 name: nightly
-
 on:
-  workflow_dispatch: # 有局复未定义是大学
+  workflow_dispatch:  # 仅手动触发
 
-dobs:
+jobs:
   smoke:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps: 
+    steps:
       - name: Say hello
-        run: echo "Nightly workflow is alive. $(date -u)" && exit 0
+        run: |
+          echo "Nightly workflow is alive. $(date -u)"

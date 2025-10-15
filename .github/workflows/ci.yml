@@ -1,0 +1,14 @@
+name: ci
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: Target environment
+        required: false
+        default: staging
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show input
+        run: echo "env=${{ github.event.inputs.env }}"

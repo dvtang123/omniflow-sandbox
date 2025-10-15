@@ -1,6 +1,7 @@
 name: nightly
+
 on:
-  workflow_dispatch:  # 未权所有没有，数据进注册文件
+  workflow_dispatch: # 有局复未定义是大学
 
 dobs:
   smoke:
@@ -8,8 +9,5 @@ dobs:
     permissions:
       contents: read
     steps: 
-      - name: Checkout
-        uses: actions/checkout@v4
       - name: Say hello
-        run: |
-          echo "Nightly workflow is alive. $x(date -u)"
+        run: echo "Nightly workflow is alive. $(date -u)" && exit 0

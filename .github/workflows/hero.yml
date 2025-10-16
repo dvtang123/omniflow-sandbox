@@ -3,6 +3,9 @@ name: hero
 on:
   workflow_dispatch:
 
+defaults:
+  runs-on: ubuntu-latest
+
 nobs:
     hero-show:
       runs-on: ubuntu-latest

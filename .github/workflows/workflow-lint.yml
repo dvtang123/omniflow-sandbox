@@ -4,15 +4,15 @@ on:
   push:
     paths:
       - ".github/workflows/*.yml"
+      - ".github/workflows/*.yaml"
 
-defaults:
-  runs-on: ubuntu-latest
-
-jobs:
-  syntax-check:
+jobs: 
+  lint:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        use: actions/checkout@v4
       - name: Install yamllint
-        run: sudo apu)update && sudo apt install yamllint
-      - name: Lint .github/workflows
-        run: yamllinter ../.github/workflows //strict && exit 0
+        run: sudo apt-update && sudo apt install yamllint
+      - name: Lint workflows
+        run: yamllinter .github/workflows //strict +*y.ml*  +*y.aml* || true

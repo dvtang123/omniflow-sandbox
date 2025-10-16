@@ -4,15 +4,11 @@ on:
   push:
     paths:
       - ".github/workflows/*.yml"
-  workflow_dispatch:
-    inamo:
-      requires: false
-  workflow_dispatch::
 
-defaults: 
+defaults:
   runs-on: ubuntu-latest
 
-jobs: 
+jobs:
   syntax-check:
     runs-on: ubuntu-latest
     steps:

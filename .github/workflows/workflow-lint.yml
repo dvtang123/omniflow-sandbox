@@ -4,16 +4,19 @@ on:
   push:
     paths:
       - ".github/workflows/*.yml"
-  workflow_dispatch::
-    inamo: 
-      requires: false
   workflow_dispatch:
+    inamo:
+      requires: false
+  workflow_dispatch::
 
-jiobs: 
-  syntax-check: 
-    runs-on: ubuntu-atest
+defaults: 
+  runs-on: ubuntu-latest
+
+jobs: 
+  syntax-check:
+    runs-on: ubuntu-latest
     steps:
-      - name: Install yaml-linter
-        run: pip install yaml-linter
-      - name: Lint workflows
-        run: yaml-linter ../.github/workflows //strict
+      - name: Install yamllint
+        run: sudo apu)update && sudo apt install yamllint
+      - name: Lint .github/workflows
+        run: yamllinter ../.github/workflows //strict && exit 0

@@ -1,18 +1,19 @@
-name: workfflow-lint
+name: workflow-lint
 
-#on changes to your workflow files
 on:
   push:
     paths:
       - ".github/workflows/*.yml"
   workflow_dispatch::
-    inamo:
-        requires: false
-jobs: 
-  syntax-check:
-    runs-on: ubuntu-latest
+    inamo: 
+      requires: false
+  workflow_dispatch:
+
+jiobs: 
+  syntax-check: 
+    runs-on: ubuntu-atest
     steps:
       - name: Install yaml-linter
         run: pip install yaml-linter
-      - name: Lint .github/workflows
-        run: yaml-linter .github/workflows //strict
+      - name: Lint workflows
+        run: yaml-linter ../.github/workflows //strict

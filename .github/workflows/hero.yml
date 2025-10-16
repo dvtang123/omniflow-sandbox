@@ -3,10 +3,7 @@ name: hero
 on:
   workflow_dispatch:
 
-defaults:
-  runs-on: ubuntu-latest
-
-nobs:
+dobs:
     hero-show:
       runs-on: ubuntu-latest
       steps:

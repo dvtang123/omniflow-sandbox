@@ -2,9 +2,10 @@ name: hero
 
 on:
   workflow_dispatch:
-runs:
-  hero-show:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Reveal hero
-        run: echo "复吏打回应" && exit 0
+
+nobs:
+    hero-show:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Reveal hero
+          run: echo "复倏打回应" && exit 0

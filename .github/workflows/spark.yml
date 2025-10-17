@@ -1,0 +1,12 @@
+name: spark
+on:
+  workflow_dispatch:
+
+images:
+  run: ubuntu-latest
+
+allow_failure: true
+
+default_steps:
+  - name: Run hello
+    run: echo "OmniFlow OK" && exit 0

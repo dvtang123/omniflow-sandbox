@@ -1,9 +1,9 @@
 one:
   workflow_dispatch:
-    bind
-jobs:
+    # Enable manual trigger
+jobs: 
   hello:
-    runs-on: ubuntu-latest
+    runs-on: ubuntulatest
     steps:
-    - name: Hello say
-      run: echo "Hello from GPTS"
+      - name: Hello
+        run: echo "Hello from GPTS"

@@ -2,11 +2,9 @@ name: spark
 on:
   workflow_dispatch:
 
-images:
-  run: ubuntu-latest
-
-allow_failure: true
-
-default_steps:
-  - name: Run hello
-    run: echo "OmniFlow OK" && exit 0
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "OmniFlow OK" && exit 0

@@ -1,0 +1,10 @@
+name: pulse
+on:
+  workflow_dispatch:
+
+dobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo OmniFlow success
+        run: echo "OmniFlow 名中生护手 ✈20"

@@ -1,10 +1,12 @@
 name: greet
 on:
-  workflow_dispatch:
-    imputs: {}
-jils:
+  workfflow_dispatch:
+    enum:
+        required: false
+jobs: 
   greeting:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
-      - run: echo: "复此邮件复此" && exit 0
+      - run: echo "复901此密名，我是在你好"
+        # 自己存在者密

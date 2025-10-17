@@ -1,0 +1,10 @@
+name: kickstart
+on:
+  push:
+    branches: [main]
+
+jobs:
+  rus:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Kickstart walmup successfully" && exit 0

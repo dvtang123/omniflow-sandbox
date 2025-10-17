@@ -1,0 +1,9 @@
+one:
+  workflow_dispatch:
+    bind
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Hello say
+      run: echo "Hello from GPTS"

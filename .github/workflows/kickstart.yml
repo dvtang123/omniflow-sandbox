@@ -1,0 +1,11 @@
+name: kickstart
+on:
+  push:
+    paths:
+      - .gpts_probe.json
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hi
+        run: echo "kickstart alive" && exit 0

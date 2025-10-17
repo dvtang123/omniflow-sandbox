@@ -1,8 +1,9 @@
-onn:
+name: hello
+on:
   workflow_dispatch:
-  jobs:
-    hello:
-      runs-on: ubuntu-latest
-      steps: 
-        - name: Hello
-          run: echo "Hello from GPTS"
+jobs:
+  say:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello from GPTS" && exit 0

@@ -1,7 +1,11 @@
 name: wave
 on:
   workflow_dispatch:
-jjobs:
+  push:
+    paths:
+      - '.github/workflows/wave.yml'
+
+jobs: 
   greeting:
     runs-on: ubuntu-latest
     steps: 

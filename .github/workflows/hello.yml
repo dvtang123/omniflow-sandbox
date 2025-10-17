@@ -1,10 +1,7 @@
 name: hello
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - ".githubworkflows/hello.yml"
-jjobs:
+jobs:
   say:
     runs-on: ubuntu-latest
     steps:

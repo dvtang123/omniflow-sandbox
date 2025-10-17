@@ -1,0 +1,9 @@
+name: wave
+on:
+  workflow_dispatch:
+jjobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Greet
+        run: echo "GPTS 一框保存好 に"

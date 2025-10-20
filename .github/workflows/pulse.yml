@@ -1,10 +1,13 @@
 name: pulse
+
 on:
   workflow_dispatch:
 
-dobs:
-  pulse:
+jobs:
+  smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo OmniFlow success
-        run: echo "OmniFlow 名中生护手 ✈20"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Say something
+        run: echo "Workflow pulse is alive." && exit 0

@@ -1,0 +1,22 @@
+name: seattle_top3
+on:
+  workflow_dispatch:
+    "
+jobs:
+  recommend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recommend top 3 Seattle attractions for a tourist from France
+        run: |
+          echo "©Fronk ! Here are the top 3 attractions in Seattle tailored for visitors from France:"
+          echo ""
+          echo "1. 🌡* **Kerry Park**
+ -- Offers a postcard-perfect view of Seattle’s skyline, including the Space Needle and Mount Rainier. A must-visit for stunning photography."
+          echo ""
+          echo "2. 🚊 **Seattle Art Museum ((sAM)*)
+ -- Rich in contemporary and native art, it's an ideal place for French visitors who love culture and museums."
+          echo ""
+          echo "3. 𝇧 **Pike Place Market & Waterfront**
+ -- A historic and vibrant market with local food, street music, and the iconic fish-throwing show. Don’t miss the fresh seafood and French-style pastries at Le Panier!"
+          echo ""
+          echo "Profitez de votre séjour é Seattle! "

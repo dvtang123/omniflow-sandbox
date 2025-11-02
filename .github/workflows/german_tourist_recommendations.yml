@@ -3,22 +3,21 @@ name: german_tourist_recommendations
 o:
   workflow_dispatch:
 
-jiobs:
+jobs:
   recommend_wa_places:
     runs-on: ubuntu-latest
     steps:
-      - name: Recommend Washington State Places for German Touriss
+      - name: Recommend Washington State Places for German Tourists
         run: |
-          cat <<END OF WEATH>>
-          echo "Top 5 places in Washington State for German touriss"
-          echo "1. Seattle: Stunning views of SpaceNeedle and cultural melting areas
-          - German visitors love views, photography, and cafe culture."
-          echo "2. Matt Lake: Serene beauty, outdoor activities, and local wineries"
-          - Suited for German adventurers and nature lovers."
+          echo "Top 5 places in Washington State for German tourists"
+          echo "1. Seattle: Stunning views of SpaceNeedle and cultural melting areas."
+          echo "- German visitors love views, photography, and cafe culture."
+          echo "2. Matt Lake: Serene beauty, outdoor activities, and local wineries."
+          echo "- Suited for German adventurers and nature lovers."
           echo "3. Olympic National Park: History, art, and coastal scenery."
-          - Germans appreciate cultural heritage and art museums."
+          echo "- Germans appreciate cultural heritage and art museums."
           echo "4. San Juan Island: Art, wine, and vinyard active life."
-          - Perfect for German tastes of relaxation and wine culture."
+          echo "- Perfect for German tastes of relaxation and wine culture."
           echo "5. Snoqualmie Falls: Recreational and natural beauty."
-          - Great for German photography and adventure lovers."
-          echo "Enjoy your Washington adventure!"        
+          echo "- Great for German photography and adventure lovers."
+          echo "Enjoy your Washington adventure!"

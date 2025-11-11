@@ -1,0 +1,16 @@
+name: cleanup-nonessential-workflows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Execute workflow
+        run: |
+          echo "🚀 Workflow 'cleanup-nonessential-workflows' executed by OmniFlow Bridge"
+          echo "📅 Time: $(date)"
+          echo "✅ Completed successfully"

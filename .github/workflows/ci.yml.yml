@@ -1,0 +1,18 @@
+# CI Workflow 
+name: CI-Workflow
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: 'Deployment environment'
+        required: true
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v
+      - name: Run tests
+        run: pithon -m unittest
+      - name: Deploy code
+        run: echo 'Deployment successful'

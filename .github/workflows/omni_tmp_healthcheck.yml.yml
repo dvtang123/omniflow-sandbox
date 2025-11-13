@@ -1,0 +1,11 @@
+name: omni_healthcheck
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* * * * *"
+jobs: 
+  healthcheck:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Check Server Health
+        run: echo 'Server health check started successfully!'

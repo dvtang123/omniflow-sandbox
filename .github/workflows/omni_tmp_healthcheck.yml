@@ -1,0 +1,17 @@
+name: omni_healthcheck
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: Environment
+        default: staging
+        type: choice
+        options: [staging, production]
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: |
+          echo "Bridge OK"
+          echo "env=${{ github.event.inputs.env }}"
